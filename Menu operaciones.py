@@ -38,10 +38,10 @@ while salir != True:
             if n2 == 0:
                 print("ERROR: Valor no válido (No se puede dividir por 0)")
                 print (" ")
-        else:    
-            res = n1 / n2
-            print ("{} / {} = {} ".format(n1, n2, res))
-            print (" ")
+            else:    
+                res = n1 / n2
+                print ("{} / {} = {} ".format(n1, n2, res))
+                print (" ")
 print ("Programa Terminado")
     
         
