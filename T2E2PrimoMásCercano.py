@@ -1,5 +1,7 @@
 '''Este programa detecta el valor primo más cercano (menor o igual) de n'''
 
+
+print("")
 n = int(input("Introduzca un número mayor que 2: "))
 if n <= 2:
     print ("Error: Introduzca un número mayor que 2")
@@ -21,7 +23,8 @@ while fin == False:
                 else:
                     d = d + 1
     
-print("El primo más cercano es: " + str(i))           
+print("El primo más cercano es: " + str(i))
+print("")           
 
 
 

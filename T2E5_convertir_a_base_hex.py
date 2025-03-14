@@ -68,4 +68,5 @@ if 1<=b<=4:
             res = res + factor * r #Depositar el valor por cada paso 
             factor = factor * 10 #multiplicar el factor por 10 para que la cifra siguiente se deposite a la derecha
     print (" ")       
-    print (res)
+    print ("El resultado es: {}".format(res))
+    print("")

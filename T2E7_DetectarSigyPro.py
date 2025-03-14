@@ -1,5 +1,6 @@
 '''La función de este programa es detectar si el número es positivo o negativo, y además, cuenta la cantidad de estos
-y saca el promedio de los valores ya introducidos. El programa no se deja de ejecutar hasta que la entrada sea 0'''
+y saca el promedio de los valores ya introducidos (positivos
+y negativos por aparte). El programa no se deja de ejecutar hasta que la entrada sea 0'''
 
 fin = False
 print(" ")
