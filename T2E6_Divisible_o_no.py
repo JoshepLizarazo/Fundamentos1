@@ -1,3 +1,6 @@
+'''La función de este programa es desplegar los valores menores que n hasta el mismo n, y detecta si cada uno de estos
+valores es divisible por 2, 3 o 5, o todos, o un conjunto par de estos'''
+
 print (" ")
 n = int(input("Introduzca Número entero: "))
 

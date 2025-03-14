@@ -1,4 +1,10 @@
+'''La función de este programa es detectar si los dos valores son pares, impares, o uno par e impar. Dependiendo si ambos
+son pares o impares, saca el máximo común divisor, y si uno es par y el otro impar, entonces saca el mínimo común múltiplo'''
+
+
+print("")
 n = int(input("Introduzca el primer valor: "))
+print("")
 m = int(input("Introduzca el segundo valor: "))
 res = 0 
 maxx = 0 

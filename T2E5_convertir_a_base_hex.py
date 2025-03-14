@@ -1,3 +1,6 @@
+'''La función de este programa es convertir un número decimal a una base de 2, 4, 8 o 16 según la elección
+del usuario'''
+
 print (" ")
 print("Conversión de número decimal a base X")
 print (" ")
