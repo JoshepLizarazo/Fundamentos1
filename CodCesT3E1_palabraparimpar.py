@@ -13,7 +13,8 @@ fradec = "" #Variable para introducir la palabra codificada (resultado final)
 
 
 def deco (m, n): #Función que hará el procedimiento de convertir palabra por palabra
-   
+
+    print(n)
     p = m 
     F = "" #Variable donde irá la letra convertida 
     
@@ -26,11 +27,11 @@ def deco (m, n): #Función que hará el procedimiento de convertir palabra por p
     if (120 <= ord(p) <= 122 or 88 <= ord(p) <= 90) or ((ord(p) == 119 or ord(p) == 87) and n == 0):
     
         if n == 0: #Si la posición es par
-            F = chr(ord(p)-23)  
+            F = chr(ord(p)-22)  
                   
         else: #Si la posición es impar
             
-            F = chr(ord(p)-22)               
+            F = chr(ord(p)-21)               
         
     #Condicional para el resto de letras 
     elif 64 < ord(p) <= 87 or 96 < ord(p) <= 119: #119 = w  87 = W
@@ -50,23 +51,22 @@ def deco (m, n): #Función que hará el procedimiento de convertir palabra por p
 
 def desco (m, n):
     
+    ''' 
+    Esta función ejerce lo mismo que la anterior, pero al contrario.
+    '''
+    
     p = m 
     F = "" #Variable donde irá la letra convertida 
-    
-    '''
-    Al usarse los valores respectivos ASCII, se tiene que hacer una condicional aparte para las letras con los números mayores,
-    ya que, si se le suma al valor ASCII de estos, el resultado será un caracter diferente a una letra. Ej: z = 122(valor ascii).  122 + 3 = 125.  125 (valor ascii) = "}" 
-    '''
-    
+        
     #Condicional para dichas letras
     if (65 <= ord(p) <= 67 or 97 <= ord(p) <= 99) or ((ord(p) == 100 or ord(p) == 68) and n == 0):
     
         if n == 0: #Si la posición es par
-            F = chr(ord(p)+23)  
+            F = chr(ord(p)+22)  
                   
         else: #Si la posición es impar
             
-            F = chr(ord(p)+22)               
+            F = chr(ord(p)+21)               
         
     #Condicional para el resto de letras 
     elif 69 <= ord(p) <= 90 or 101 < ord(p) <= 122: #119 = w  87 = W
