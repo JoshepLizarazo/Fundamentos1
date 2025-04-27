@@ -10,11 +10,13 @@ n = str(input("Introduzca la palabra a codificar: "))
 A = list(n) #Se convierte la palabra a codificar en una lista
 fradec = "" #Variable para introducir la palabra codificada (resultado final)
 
-
+pp = 0 #Esta variable define si la posición de la palabra es par o impar. Empieza desde la posición '0', que es par
+re= 0 #Variable auxiliar que ayuda a cambiar el valor de pp
+    
 
 def deco (m, n): #Función que hará el procedimiento de convertir palabra por palabra
 
-    print(n)
+    #print(n)
     p = m 
     F = "" #Variable donde irá la letra convertida 
     
@@ -24,14 +26,14 @@ def deco (m, n): #Función que hará el procedimiento de convertir palabra por p
     '''
     
     #Condicional para dichas letras
-    if (120 <= ord(p) <= 122 or 88 <= ord(p) <= 90) or ((ord(p) == 119 or ord(p) == 87) and n == 0):
+    if (120 <= ord(p) <= 122 or 88 <= ord(p) <= 90) or ((ord(p) == 119 or ord(p) == 87) and n == 1):
     
         if n == 0: #Si la posición es par
-            F = chr(ord(p)-22)  
+            F = chr(ord(p)-23)  
                   
         else: #Si la posición es impar
             
-            F = chr(ord(p)-21)               
+            F = chr(ord(p)-22)               
         
     #Condicional para el resto de letras 
     elif 64 < ord(p) <= 87 or 96 < ord(p) <= 119: #119 = w  87 = W
@@ -59,17 +61,17 @@ def desco (m, n):
     F = "" #Variable donde irá la letra convertida 
         
     #Condicional para dichas letras
-    if (65 <= ord(p) <= 67 or 97 <= ord(p) <= 99) or ((ord(p) == 100 or ord(p) == 68) and n == 0):
+    if (65 <= ord(p) <= 67 or 97 <= ord(p) <= 99) or ((ord(p) == 100 or ord(p) == 68) and n == 1):
     
         if n == 0: #Si la posición es par
-            F = chr(ord(p)+22)  
+            F = chr(ord(p)+23)  
                   
         else: #Si la posición es impar
             
-            F = chr(ord(p)+21)               
+            F = chr(ord(p)+22)               
         
     #Condicional para el resto de letras 
-    elif 69 <= ord(p) <= 90 or 101 < ord(p) <= 122: #119 = w  87 = W
+    elif 69 <= ord(p) <= 90 or 101 <= ord(p) <= 122: #119 = w  87 = W
     
         if n == 0: #Si la posición es par
             F = chr(ord(p)-3)             
@@ -86,13 +88,11 @@ def desco (m, n):
     
 for i in range(len(n)):
     
-    pp = 0 #Esta variable define si la posición de la palabra es par o impar. Empieza desde la posición '0', que es par
-    re= 0 #Variable auxiliar que ayuda a cambiar el valor de pp
-    
+   
     if A[i] == " ": #En esta parte, se detecta si hay un espacio, lo cual significa que la siguiente palabra cambia de posición (Par o impar)
         re += 1
         pp = re % 2
-        
+    print(pp)
     if qq == 1:
         A.insert(i, deco(A.pop(i), pp)) #Se llama a la función, y, a su vez se reemplaza el valor i de la lista, por el valor convertido por la función  
     
