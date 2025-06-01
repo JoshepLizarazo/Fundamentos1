@@ -1,3 +1,8 @@
+'''
+Trabajo en clase:
+Programa encargado de sacarla varianza, desviación estandar, rango y media de una lista de números
+'''
+
 import random as rnd
 
 media = 0
